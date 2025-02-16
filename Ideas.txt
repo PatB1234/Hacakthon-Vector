@@ -1,0 +1,62 @@
+BACKUPS:
+Passwordle
+Honeypot(Quarantining suspicious thinngs)
+
+
+
+IDEAS:
+Offline website for countering DOS
+Offline website using deepseek offline verison. 
+/admin with a username and a password path so that permission escalation problem is solved
+Zero day exploits
+use Gemini API for the Ai part of it
+Possibly BlackBox API rather than gemini
+
+
+AI presentation notes(Existing uses of AI in cyberse):
+- Intrusion and anomaly detection
+- Threat intelligence and malware analysis
+- Physhing detection and email security
+
+- Data qualaity and availability
+- Explainability and transparency
+- Regulation, ethics and privacy
+- Data sharing, model interpretability and real-time detection.
+
+Langs:
+fastapi
+
+
+
+
+
+AI-Powered "Ghost Access" – Fake Admin Accounts That Detect & Neutralize Hackers (STRIDE: Elevation of Privilege)
+Concept:
+Hackers often create fake admin accounts to gain long-term access to a system. What if we reverse the tactic—using AI-generated fake admin accounts to bait attackers, track them, and shut them down automatically?
+
+Ghost Access is an AI-driven system that automatically creates realistic but non-functional admin accounts. These decoy accounts look real, even passing automated security scans, but any attempt to use them instantly triggers AI-based countermeasures.
+
+How It Works:
+AI-Generated Fake Admins (via API calls to Active Directory, AWS, etc.)
+
+When a system is deployed, AI creates fake admin accounts with believable usernames, activity history, and permissions.
+These accounts appear legitimate in system logs but have zero real privileges—they exist only as traps.
+AI-Powered Intrusion Detection
+
+If an attacker tries to log in using one of these accounts, AI flags the attempt as malicious.
+Instead of blocking immediately, the system lets the hacker think they’ve succeeded and begins monitoring their actions.
+Automated Containment & Countermeasures
+
+AI tracks every command or action, mapping out the attack method.
+The system can then auto-revoke actual admin access, lock down critical systems, or deploy misleading fake data to misdirect the attacker.
+If needed, AI can even automatically generate a fake "error" message to make the hacker believe their exploit failed, preventing them from trying another method.
+Why This Stands Out
+Creative Yet Simple: Uses AI to generate fake access points rather than just detecting intrusions.
+High Impact: Turns privilege escalation into an opportunity to neutralize threats without attackers realizing.
+STRIDE Relevance (Elevation of Privilege): Directly targets unauthorized privilege escalation by baiting and trapping attackers.
+Easy Prototype:
+Use a simple API to create fake user accounts.
+Show a demo where an attacker thinks they gained admin access, but AI detects and shuts them down automatically.
+Engaging Presentation: Live demo of a hacker trying to log in to a convincing fake admin account, only for AI to silently neutralize them.
+
+GOOD IDEA 👍
