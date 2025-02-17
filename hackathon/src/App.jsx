@@ -1,24 +1,19 @@
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-// import Button from '@mui/material/Button';
-import SignUpPage from './SignupPage';
-
-function helloWorld() {
-
-	console.log("Hello world");
-}
-
+import SignUpPage from "./SignupPage.jsx";
+import AIPage from "./AIPage.jsx"
+import * as ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import UserPage from './UserPage1.jsx'
 function App() {
+  return (
+    <Router>
 
-	return (
-		<>
-				<SignUpPage />
-		</>
-	);
-
+      <Routes>
+        <Route path="/" element={<SignUpPage/>} />
+        <Route path="/AI" element={<AIPage/>} />
+		<Route path="/UserPage" element={<UserPage/>} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
-	

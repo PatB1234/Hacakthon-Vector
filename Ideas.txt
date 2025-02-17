@@ -60,3 +60,5 @@ Show a demo where an attacker thinks they gained admin access, but AI detects an
 Engaging Presentation: Live demo of a hacker trying to log in to a convincing fake admin account, only for AI to silently neutralize them.
 
 GOOD IDEA 👍
+
+https://www.freepik.com/free-photo/outer-space-background_4100956.htm#fromView=keyword&page=1&position=0&uuid=cff34ff3-e969-4dc5-a846-7bb83b89bc55&query=High+Resolution+Space
